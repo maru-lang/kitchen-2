@@ -121,30 +121,48 @@
             border: 1px solid #f1f5f9;
         }
 
+        /* --- T3dilat dyal Tswira w Lkoutba --- */
         .word-header {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 15px;
+        }
+
+        .verb-icon {
+            width: 50px;
+            height: 50px;
+            object-fit: cover;
+            border-radius: 8px;
+            flex-shrink: 0;
+            background-color: #f8fafc;
+        }
+
+        .word-text {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            width: 100%;
+            flex-wrap: wrap;
+        }
+
+        .english-word {
             font-size: 1.4rem;
             font-weight: 600;
             color: var(--accent-purple);
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 8px;
         }
 
         .arabic-trans { 
             font-family: 'Amiri', serif; 
             color: #1e293b; 
             font-size: 1.4rem; 
-            display: block;
-            margin-top: 5px;
+            margin-left: auto; /* Kaddfe3 l'arbiya l-liman */
         }
         
         .phonetic { 
             color: #0ea5e9; 
             font-style: italic; 
             font-size: 1.2rem; 
-            display: block; 
-            margin-bottom: 12px;
             font-family: 'Amiri', serif;
         }
         
@@ -199,34 +217,6 @@
             .tab-nav { flex-wrap: wrap; }
             .tab-link { flex: 50%; }
         }
-        /* 1. Kijme3 sora w l-koutba f star wahed */
-.word-header {
-    display: flex;
-    align-items: center;
-    gap: 15px; 
-}
-
-/* 2. Had l-code hwa li kaysgher sora w kayqaddha */
-.verb-icon {
-    width: 45px;
-    height: 45px;
-    object-fit: cover;
-    border-radius: 6px;
-    flex-shrink: 0;
-}
-
-/* 3. Kijme3 Anglais, Phonetics w l-Arbiya */
-.word-text {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    width: 100%;
-}
-
-/* 4. Kadfe3 l-Arbiya l-qont dyal l-liman */
-.arabic-trans {
-    margin-left: auto;
-}
     </style>
 </head>
 <body>
@@ -250,28 +240,31 @@
             <h2 class="category-title">1. Preparation & Cutting</h2>
             <div class="card-grid">
                 <div class="card">
-    <div class="word-header">
-        <img src="images/chop.png" class="verb-icon">
-        <div class="word-text">
-            <span class="english-word">Chop</span>
-            <span class="phonetic">تْشُوبْ</span>
-            <span class="arabic-trans">يقطع</span>
-        </div>
-    </div>    
-    <p class="definition">To cut food into small pieces.</p>
-    <ul class="examples-list">
-        <li>I help my mom chop carrots.</li>
-        <li>Chop the onions for the soup.</li>
-        <li>Can you chop the wood?</li>
-    </ul>
-</div>
+                    <div class="word-header">
+                        <img src="images/chop.png" class="verb-icon" alt="Chop">
+                        <div class="word-text">
+                            <span class="english-word">Chop</span>
+                            <span class="phonetic">تْشُوبْ</span>
+                            <span class="arabic-trans">يقطع</span>
+                        </div>
+                    </div>
+                    <p class="definition">To cut food into small pieces.</p>
+                    <ul class="examples-list">
+                        <li>I help my mom chop carrots.</li>
+                        <li>Chop the onions for the soup.</li>
+                        <li>Can you chop the wood?</li>
+                    </ul>
+                </div>
+                
                 <div class="card">
                     <div class="word-header">
-                        <img src="images/slice.png" class="verb-icon">
-                         <div class="word-text">
-                       <span class="english-word">Slice</span>
-                        <span class="arabic-trans">يشرح</span></div>
-                    <span class="phonetic">سْلَايْسْ</span>
+                        <img src="images/slice.png" class="verb-icon" alt="Slice">
+                        <div class="word-text">
+                            <span class="english-word">Slice</span>
+                            <span class="phonetic">سْلَايْسْ</span>
+                            <span class="arabic-trans">يشرح</span>
+                        </div>
+                    </div>
                     <p class="definition">To cut food into thin, flat pieces.</p>
                     <ul class="examples-list">
                         <li>Slice the bread for sandwiches.</li>
@@ -279,9 +272,16 @@
                         <li>Can you slice the cheese?</li>
                     </ul>
                 </div>
+
                 <div class="card">
-                    <div class="word-header">Dice <span class="arabic-trans">يقطع مكعبات</span></div>
-                    <span class="phonetic">دَايْسْ</span>
+                    <div class="word-header">
+                        <img src="images/dice.png" class="verb-icon" alt="Dice">
+                        <div class="word-text">
+                            <span class="english-word">Dice</span>
+                            <span class="phonetic">دَايْسْ</span>
+                            <span class="arabic-trans">يقطع مكعبات</span>
+                        </div>
+                    </div>
                     <p class="definition">To cut food into small cubes.</p>
                     <ul class="examples-list">
                         <li>Dice the potatoes for soup.</li>
@@ -289,9 +289,16 @@
                         <li>It is easy to dice a mango.</li>
                     </ul>
                 </div>
+
                 <div class="card">
-                    <div class="word-header">Peel <span class="arabic-trans">يقشر</span></div>
-                    <span class="phonetic">بِيلْ</span>
+                    <div class="word-header">
+                        <img src="images/peel.png" class="verb-icon" alt="Peel">
+                        <div class="word-text">
+                            <span class="english-word">Peel</span>
+                            <span class="phonetic">بِيلْ</span>
+                            <span class="arabic-trans">يقشر</span>
+                        </div>
+                    </div>
                     <p class="definition">To remove the skin from fruit or veggies.</p>
                     <ul class="examples-list">
                         <li>I peel the banana.</li>
@@ -299,9 +306,16 @@
                         <li>Peel the orange for me.</li>
                     </ul>
                 </div>
+
                 <div class="card">
-                    <div class="word-header">Wash <span class="arabic-trans">يغسل</span></div>
-                    <span class="phonetic">وُوشْ</span>
+                    <div class="word-header">
+                        <img src="images/wash.png" class="verb-icon" alt="Wash">
+                        <div class="word-text">
+                            <span class="english-word">Wash</span>
+                            <span class="phonetic">وُوشْ</span>
+                            <span class="arabic-trans">يغسل</span>
+                        </div>
+                    </div>
                     <p class="definition">To clean something with water.</p>
                     <ul class="examples-list">
                         <li>Wash the apples first.</li>
@@ -309,9 +323,16 @@
                         <li>Wash the dishes carefully.</li>
                     </ul>
                 </div>
+
                 <div class="card">
-                    <div class="word-header">Measure <span class="arabic-trans">يقيس</span></div>
-                    <span class="phonetic">مِيچَرْ</span>
+                    <div class="word-header">
+                        <img src="images/measure.png" class="verb-icon" alt="Measure">
+                        <div class="word-text">
+                            <span class="english-word">Measure</span>
+                            <span class="phonetic">مِيچَرْ</span>
+                            <span class="arabic-trans">يقيس</span>
+                        </div>
+                    </div>
                     <p class="definition">To find the exact amount using a cup or spoon.</p>
                     <ul class="examples-list">
                         <li>Measure one cup of milk.</li>
@@ -319,9 +340,16 @@
                         <li>Use a spoon to measure.</li>
                     </ul>
                 </div>
+
                 <div class="card">
-                    <div class="word-header">Grate <span class="arabic-trans">يبشر</span></div>
-                    <span class="phonetic">غْرَيْتْ</span>
+                    <div class="word-header">
+                        <img src="images/grate.png" class="verb-icon" alt="Grate">
+                        <div class="word-text">
+                            <span class="english-word">Grate</span>
+                            <span class="phonetic">غْرَيْتْ</span>
+                            <span class="arabic-trans">يبشر</span>
+                        </div>
+                    </div>
                     <p class="definition">To rub food against a metal tool.</p>
                     <ul class="examples-list">
                         <li>I grate cheese for pizza.</li>
@@ -329,9 +357,16 @@
                         <li>Can you grate the lemon?</li>
                     </ul>
                 </div>
+
                 <div class="card">
-                    <div class="word-header">Break <span class="arabic-trans">يكسر</span></div>
-                    <span class="phonetic">بْرَيْكْ</span>
+                    <div class="word-header">
+                        <img src="images/break.png" class="verb-icon" alt="Break">
+                        <div class="word-text">
+                            <span class="english-word">Break</span>
+                            <span class="phonetic">بْرَيْكْ</span>
+                            <span class="arabic-trans">يكسر</span>
+                        </div>
+                    </div>
                     <p class="definition">To separate into pieces.</p>
                     <ul class="examples-list">
                         <li>Break the eggs into a bowl.</li>
@@ -346,8 +381,14 @@
             <h2 class="category-title">2. Heat & Cooking Methods</h2>
             <div class="card-grid">
                 <div class="card">
-                    <div class="word-header">Fry <span class="arabic-trans">يقلي</span></div>
-                    <span class="phonetic">فْرَايْ</span>
+                    <div class="word-header">
+                        <img src="images/fry.png" class="verb-icon" alt="Fry">
+                        <div class="word-text">
+                            <span class="english-word">Fry</span>
+                            <span class="phonetic">فْرَايْ</span>
+                            <span class="arabic-trans">يقلي</span>
+                        </div>
+                    </div>
                     <p class="definition">To cook in hot oil or fat.</p>
                     <ul class="examples-list">
                         <li>I like to fry eggs.</li>
@@ -355,9 +396,16 @@
                         <li>Don't fry the chicken too long.</li>
                     </ul>
                 </div>
+
                 <div class="card">
-                    <div class="word-header">Boil <span class="arabic-trans">يغلي</span></div>
-                    <span class="phonetic">بُويْلْ</span>
+                    <div class="word-header">
+                        <img src="images/boil.png" class="verb-icon" alt="Boil">
+                        <div class="word-text">
+                            <span class="english-word">Boil</span>
+                            <span class="phonetic">بُويْلْ</span>
+                            <span class="arabic-trans">يغلي</span>
+                        </div>
+                    </div>
                     <p class="definition">To cook in bubbling hot water.</p>
                     <ul class="examples-list">
                         <li>Boil water for the tea.</li>
@@ -365,9 +413,16 @@
                         <li>Wait for the soup to boil.</li>
                     </ul>
                 </div>
+
                 <div class="card">
-                    <div class="word-header">Simmer <span class="arabic-trans">يغلي ببطء</span></div>
-                    <span class="phonetic">سِيمَرْ</span>
+                    <div class="word-header">
+                        <img src="images/simmer.png" class="verb-icon" alt="Simmer">
+                        <div class="word-text">
+                            <span class="english-word">Simmer</span>
+                            <span class="phonetic">سِيمَرْ</span>
+                            <span class="arabic-trans">يغلي ببطء</span>
+                        </div>
+                    </div>
                     <p class="definition">To cook slowly just below boiling.</p>
                     <ul class="examples-list">
                         <li>Let the sauce simmer.</li>
@@ -375,9 +430,16 @@
                         <li>The stew needs to simmer.</li>
                     </ul>
                 </div>
+
                 <div class="card">
-                    <div class="word-header">Steam <span class="arabic-trans">يطبخ على البخار</span></div>
-                    <span class="phonetic">سْتِيمْ</span>
+                    <div class="word-header">
+                        <img src="images/steam.png" class="verb-icon" alt="Steam">
+                        <div class="word-text">
+                            <span class="english-word">Steam</span>
+                            <span class="phonetic">سْتِيمْ</span>
+                            <span class="arabic-trans">يطبخ على البخار</span>
+                        </div>
+                    </div>
                     <p class="definition">To cook using hot water vapor.</p>
                     <ul class="examples-list">
                         <li>I steam fresh vegetables.</li>
@@ -385,9 +447,16 @@
                         <li>It is healthy to steam food.</li>
                     </ul>
                 </div>
+
                 <div class="card">
-                    <div class="word-header">Roast <span class="arabic-trans">يشوي (في الفرن)</span></div>
-                    <span class="phonetic">رُوسْتْ</span>
+                    <div class="word-header">
+                        <img src="images/roast.png" class="verb-icon" alt="Roast">
+                        <div class="word-text">
+                            <span class="english-word">Roast</span>
+                            <span class="phonetic">رُوسْتْ</span>
+                            <span class="arabic-trans">يشوي (في الفرن)</span>
+                        </div>
+                    </div>
                     <p class="definition">To cook meat or veggies in an oven.</p>
                     <ul class="examples-list">
                         <li>Roast the chicken for dinner.</li>
@@ -395,9 +464,16 @@
                         <li>My mom can roast a turkey.</li>
                     </ul>
                 </div>
+
                 <div class="card">
-                    <div class="word-header">Bake <span class="arabic-trans">يخبز</span></div>
-                    <span class="phonetic">بَيْكْ</span>
+                    <div class="word-header">
+                        <img src="images/bake.png" class="verb-icon" alt="Bake">
+                        <div class="word-text">
+                            <span class="english-word">Bake</span>
+                            <span class="phonetic">بَيْكْ</span>
+                            <span class="arabic-trans">يخبز</span>
+                        </div>
+                    </div>
                     <p class="definition">To cook bread or cakes in an oven.</p>
                     <ul class="examples-list">
                         <li>I want to bake a cake.</li>
@@ -405,9 +481,16 @@
                         <li>My dad can bake bread.</li>
                     </ul>
                 </div>
+
                 <div class="card">
-                    <div class="word-header">Grill <span class="arabic-trans">يشوي (على الفحم)</span></div>
-                    <span class="phonetic">غْرِيلْ</span>
+                    <div class="word-header">
+                        <img src="images/grill.png" class="verb-icon" alt="Grill">
+                        <div class="word-text">
+                            <span class="english-word">Grill</span>
+                            <span class="phonetic">غْرِيلْ</span>
+                            <span class="arabic-trans">يشوي (على الفحم)</span>
+                        </div>
+                    </div>
                     <p class="definition">To cook over a fire or metal frame.</p>
                     <ul class="examples-list">
                         <li>Let's grill some meat.</li>
@@ -415,9 +498,16 @@
                         <li>We grill in the garden.</li>
                     </ul>
                 </div>
+
                 <div class="card">
-                    <div class="word-header">Heat <span class="arabic-trans">يسخن</span></div>
-                    <span class="phonetic">هِيتْ</span>
+                    <div class="word-header">
+                        <img src="images/heat.png" class="verb-icon" alt="Heat">
+                        <div class="word-text">
+                            <span class="english-word">Heat</span>
+                            <span class="phonetic">هِيتْ</span>
+                            <span class="arabic-trans">يسخن</span>
+                        </div>
+                    </div>
                     <p class="definition">To make something hot.</p>
                     <ul class="examples-list">
                         <li>Heat the oil in the pan.</li>
@@ -425,9 +515,16 @@
                         <li>Heat the oven to 180 degrees.</li>
                     </ul>
                 </div>
+
                 <div class="card">
-                    <div class="word-header">Toast <span class="arabic-trans">يحمص</span></div>
-                    <span class="phonetic">تُوسْتْ</span>
+                    <div class="word-header">
+                        <img src="images/toast.png" class="verb-icon" alt="Toast">
+                        <div class="word-text">
+                            <span class="english-word">Toast</span>
+                            <span class="phonetic">تُوسْتْ</span>
+                            <span class="arabic-trans">يحمص</span>
+                        </div>
+                    </div>
                     <p class="definition">To make bread crisp and brown.</p>
                     <ul class="examples-list">
                         <li>I toast bread for breakfast.</li>
@@ -442,8 +539,14 @@
             <h2 class="category-title">3. Mixing & Combining</h2>
             <div class="card-grid">
                 <div class="card">
-                    <div class="word-header">Mix <span class="arabic-trans">يخلط</span></div>
-                    <span class="phonetic">مِيكْسْ</span>
+                    <div class="word-header">
+                        <img src="images/mix.png" class="verb-icon" alt="Mix">
+                        <div class="word-text">
+                            <span class="english-word">Mix</span>
+                            <span class="phonetic">مِيكْسْ</span>
+                            <span class="arabic-trans">يخلط</span>
+                        </div>
+                    </div>
                     <p class="definition">To combine different ingredients together.</p>
                     <ul class="examples-list">
                         <li>Mix flour and sugar.</li>
@@ -451,9 +554,16 @@
                         <li>Mix the salad well.</li>
                     </ul>
                 </div>
+
                 <div class="card">
-                    <div class="word-header">Blend <span class="arabic-trans">يمزج</span></div>
-                    <span class="phonetic">بْلَيْنْدْ</span>
+                    <div class="word-header">
+                        <img src="images/blend.png" class="verb-icon" alt="Blend">
+                        <div class="word-text">
+                            <span class="english-word">Blend</span>
+                            <span class="phonetic">بْلَيْنْدْ</span>
+                            <span class="arabic-trans">يمزج</span>
+                        </div>
+                    </div>
                     <p class="definition">To mix together in a machine.</p>
                     <ul class="examples-list">
                         <li>Blend fruit for a smoothie.</li>
@@ -461,9 +571,16 @@
                         <li>Use the blender to blend.</li>
                     </ul>
                 </div>
+
                 <div class="card">
-                    <div class="word-header">Stir <span class="arabic-trans">يحرك</span></div>
-                    <span class="phonetic">سْتِيرْ</span>
+                    <div class="word-header">
+                        <img src="images/stir.png" class="verb-icon" alt="Stir">
+                        <div class="word-text">
+                            <span class="english-word">Stir</span>
+                            <span class="phonetic">سْتِيرْ</span>
+                            <span class="arabic-trans">يحرك</span>
+                        </div>
+                    </div>
                     <p class="definition">To move a spoon in circles.</p>
                     <ul class="examples-list">
                         <li>Stir your tea.</li>
@@ -471,9 +588,16 @@
                         <li>Don't forget to stir.</li>
                     </ul>
                 </div>
+
                 <div class="card">
-                    <div class="word-header">Whip <span class="arabic-trans">يخفق</span></div>
-                    <span class="phonetic">وِيپْ</span>
+                    <div class="word-header">
+                        <img src="images/whip.png" class="verb-icon" alt="Whip">
+                        <div class="word-text">
+                            <span class="english-word">Whip</span>
+                            <span class="phonetic">وِيپْ</span>
+                            <span class="arabic-trans">يخفق</span>
+                        </div>
+                    </div>
                     <p class="definition">To beat food very fast until fluffy.</p>
                     <ul class="examples-list">
                         <li>Whip the cream for cake.</li>
@@ -481,9 +605,16 @@
                         <li>Use a whisk to whip.</li>
                     </ul>
                 </div>
+
                 <div class="card">
-                    <div class="word-header">Knead <span class="arabic-trans">يعجن</span></div>
-                    <span class="phonetic">نِيدْ</span>
+                    <div class="word-header">
+                        <img src="images/knead.png" class="verb-icon" alt="Knead">
+                        <div class="word-text">
+                            <span class="english-word">Knead</span>
+                            <span class="phonetic">نِيدْ</span>
+                            <span class="arabic-trans">يعجن</span>
+                        </div>
+                    </div>
                     <p class="definition">To press and fold dough with hands.</p>
                     <ul class="examples-list">
                         <li>Knead the bread dough.</li>
@@ -491,9 +622,16 @@
                         <li>Knead it for ten minutes.</li>
                     </ul>
                 </div>
+
                 <div class="card">
-                    <div class="word-header">Add <span class="arabic-trans">يضيف</span></div>
-                    <span class="phonetic">آدْ</span>
+                    <div class="word-header">
+                        <img src="images/add.png" class="verb-icon" alt="Add">
+                        <div class="word-text">
+                            <span class="english-word">Add</span>
+                            <span class="phonetic">آدْ</span>
+                            <span class="arabic-trans">يضيف</span>
+                        </div>
+                    </div>
                     <p class="definition">To put more into a mixture.</p>
                     <ul class="examples-list">
                         <li>Add some salt to the soup.</li>
@@ -508,8 +646,14 @@
             <h2 class="category-title">4. Serving & Other Actions</h2>
             <div class="card-grid">
                 <div class="card">
-                    <div class="word-header">Serve <span class="arabic-trans">يقدم</span></div>
-                    <span class="phonetic">سِيرْفْ</span>
+                    <div class="word-header">
+                        <img src="images/serve.png" class="verb-icon" alt="Serve">
+                        <div class="word-text">
+                            <span class="english-word">Serve</span>
+                            <span class="phonetic">سِيرْفْ</span>
+                            <span class="arabic-trans">يقدم</span>
+                        </div>
+                    </div>
                     <p class="definition">To give food to people at a meal.</p>
                     <ul class="examples-list">
                         <li>I serve dinner at 8.</li>
@@ -517,9 +661,16 @@
                         <li>Time to serve!</li>
                     </ul>
                 </div>
+
                 <div class="card">
-                    <div class="word-header">Pour <span class="arabic-trans">يصب</span></div>
-                    <span class="phonetic">بُورْ</span>
+                    <div class="word-header">
+                        <img src="images/pour.png" class="verb-icon" alt="Pour">
+                        <div class="word-text">
+                            <span class="english-word">Pour</span>
+                            <span class="phonetic">بُورْ</span>
+                            <span class="arabic-trans">يصب</span>
+                        </div>
+                    </div>
                     <p class="definition">To make liquid flow out.</p>
                     <ul class="examples-list">
                         <li>Pour some milk for me.</li>
@@ -527,9 +678,16 @@
                         <li>Pour juice into the glass.</li>
                     </ul>
                 </div>
+
                 <div class="card">
-                    <div class="word-header">Drain <span class="arabic-trans">يصفي</span></div>
-                    <span class="phonetic">دْرَيْنْ</span>
+                    <div class="word-header">
+                        <img src="images/drain.png" class="verb-icon" alt="Drain">
+                        <div class="word-text">
+                            <span class="english-word">Drain</span>
+                            <span class="phonetic">دْرَيْنْ</span>
+                            <span class="arabic-trans">يصفي</span>
+                        </div>
+                    </div>
                     <p class="definition">To remove liquid from food.</p>
                     <ul class="examples-list">
                         <li>Drain the pasta water.</li>
@@ -537,9 +695,16 @@
                         <li>Use a tool to drain it.</li>
                     </ul>
                 </div>
+
                 <div class="card">
-                    <div class="word-header">Squeeze <span class="arabic-trans">يعصر</span></div>
-                    <span class="phonetic">سْكْوِيزْ</span>
+                    <div class="word-header">
+                        <img src="images/squeeze.png" class="verb-icon" alt="Squeeze">
+                        <div class="word-text">
+                            <span class="english-word">Squeeze</span>
+                            <span class="phonetic">سْكْوِيزْ</span>
+                            <span class="arabic-trans">يعصر</span>
+                        </div>
+                    </div>
                     <p class="definition">To press to get liquid out.</p>
                     <ul class="examples-list">
                         <li>Squeeze the lemon on fish.</li>
@@ -547,9 +712,16 @@
                         <li>Squeeze the bottle.</li>
                     </ul>
                 </div>
+
                 <div class="card">
-                    <div class="word-header">Mash <span class="arabic-trans">يهرس</span></div>
-                    <span class="phonetic">مَاشْ</span>
+                    <div class="word-header">
+                        <img src="images/mash.png" class="verb-icon" alt="Mash">
+                        <div class="word-text">
+                            <span class="english-word">Mash</span>
+                            <span class="phonetic">مَاشْ</span>
+                            <span class="arabic-trans">يهرس</span>
+                        </div>
+                    </div>
                     <p class="definition">To crush food into a soft mass.</p>
                     <ul class="examples-list">
                         <li>I mash the potatoes.</li>
@@ -557,9 +729,16 @@
                         <li>It is easy to mash.</li>
                     </ul>
                 </div>
+
                 <div class="card">
-                    <div class="word-header">Crush <span class="arabic-trans">يسحق</span></div>
-                    <span class="phonetic">كْرَاشْ</span>
+                    <div class="word-header">
+                        <img src="images/crush.png" class="verb-icon" alt="Crush">
+                        <div class="word-text">
+                            <span class="english-word">Crush</span>
+                            <span class="phonetic">كْرَاشْ</span>
+                            <span class="arabic-trans">يسحق</span>
+                        </div>
+                    </div>
                     <p class="definition">To break into bits by pressing hard.</p>
                     <ul class="examples-list">
                         <li>Crush the garlic.</li>
@@ -567,9 +746,16 @@
                         <li>Don't crush the biscuits.</li>
                     </ul>
                 </div>
+
                 <div class="card">
-                    <div class="word-header">Sprinkle <span class="arabic-trans">يرش</span></div>
-                    <span class="phonetic">سْبْرِينْكَلْ</span>
+                    <div class="word-header">
+                        <img src="images/sprinkle.png" class="verb-icon" alt="Sprinkle">
+                        <div class="word-text">
+                            <span class="english-word">Sprinkle</span>
+                            <span class="phonetic">سْبْرِينْكَلْ</span>
+                            <span class="arabic-trans">يرش</span>
+                        </div>
+                    </div>
                     <p class="definition">To scatter small bits over food.</p>
                     <ul class="examples-list">
                         <li>Sprinkle cheese on pasta.</li>
@@ -577,9 +763,16 @@
                         <li>Add a sprinkle of salt.</li>
                     </ul>
                 </div>
+
                 <div class="card">
-                    <div class="word-header">Sift <span class="arabic-trans">ينخل</span></div>
-                    <span class="phonetic">سِيفْتْ</span>
+                    <div class="word-header">
+                        <img src="images/sift.png" class="verb-icon" alt="Sift">
+                        <div class="word-text">
+                            <span class="english-word">Sift</span>
+                            <span class="phonetic">سِيفْتْ</span>
+                            <span class="arabic-trans">ينخل</span>
+                        </div>
+                    </div>
                     <p class="definition">To put flour through a net for lightness.</p>
                     <ul class="examples-list">
                         <li>Sift the flour first.</li>
@@ -587,9 +780,16 @@
                         <li>It makes the cake light.</li>
                     </ul>
                 </div>
+
                 <div class="card">
-                    <div class="word-header">Spread <span class="arabic-trans">يدهن</span></div>
-                    <span class="phonetic">سْبْرِيدْ</span>
+                    <div class="word-header">
+                        <img src="images/spread.png" class="verb-icon" alt="Spread">
+                        <div class="word-text">
+                            <span class="english-word">Spread</span>
+                            <span class="phonetic">سْبْرِيدْ</span>
+                            <span class="arabic-trans">يدهن</span>
+                        </div>
+                    </div>
                     <p class="definition">To put a layer on bread or surface.</p>
                     <ul class="examples-list">
                         <li>Spread jam on bread.</li>
@@ -597,9 +797,16 @@
                         <li>Spread it evenly.</li>
                     </ul>
                 </div>
+
                 <div class="card">
-                    <div class="word-header">Taste <span class="arabic-trans">يتذوق</span></div>
-                    <span class="phonetic">تَيْسْتْ</span>
+                    <div class="word-header">
+                        <img src="images/taste.png" class="verb-icon" alt="Taste">
+                        <div class="word-text">
+                            <span class="english-word">Taste</span>
+                            <span class="phonetic">تَيْسْتْ</span>
+                            <span class="arabic-trans">يتذوق</span>
+                        </div>
+                    </div>
                     <p class="definition">To test the flavor with your mouth.</p>
                     <ul class="examples-list">
                         <li>Taste the soup.</li>
@@ -607,9 +814,16 @@
                         <li>Can I taste a cookie?</li>
                     </ul>
                 </div>
+
                 <div class="card">
-                    <div class="word-header">Flip <span class="arabic-trans">يقلب</span></div>
-                    <span class="phonetic">فْلِيپْ</span>
+                    <div class="word-header">
+                        <img src="images/flip.png" class="verb-icon" alt="Flip">
+                        <div class="word-text">
+                            <span class="english-word">Flip</span>
+                            <span class="phonetic">فْلِيپْ</span>
+                            <span class="arabic-trans">يقلب</span>
+                        </div>
+                    </div>
                     <p class="definition">To turn something over quickly.</p>
                     <ul class="examples-list">
                         <li>Flip the pancake.</li>
