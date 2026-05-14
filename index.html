@@ -199,6 +199,20 @@
             .tab-nav { flex-wrap: wrap; }
             .tab-link { flex: 50%; }
         }
+        /* Had l-code kiy-qad l-tswira hda l-koutba */
+    .word-header {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .verb-icon {
+        width: 45px;
+        height: 45px;
+        object-fit: cover;
+        border-radius: 6px;
+        flex-shrink: 0;
+    }
     </style>
 </head>
 <body>
@@ -222,8 +236,10 @@
             <h2 class="category-title">1. Preparation & Cutting</h2>
             <div class="card-grid">
                 <div class="card">
-                    <div class="word-header">Chop <span class="arabic-trans">يقطع</span></div>
-                    <span class="phonetic">تْشُوبْ</span>
+<div class="word-header">
+    <img src="images/chop.png" class="verb-icon">
+    Chop <span class="arabic-trans">يقطع</span>
+</div> 
                     <p class="definition">To cut food into small pieces.</p>
                     <ul class="examples-list">
                         <li>I help my mom chop carrots.</li>
