@@ -199,6 +199,34 @@
             .tab-nav { flex-wrap: wrap; }
             .tab-link { flex: 50%; }
         }
+        /* 1. Kijme3 sora w l-koutba f star wahed */
+.word-header {
+    display: flex;
+    align-items: center;
+    gap: 15px; 
+}
+
+/* 2. Had l-code hwa li kaysgher sora w kayqaddha */
+.verb-icon {
+    width: 45px;
+    height: 45px;
+    object-fit: cover;
+    border-radius: 6px;
+    flex-shrink: 0;
+}
+
+/* 3. Kijme3 Anglais, Phonetics w l-Arbiya */
+.word-text {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+}
+
+/* 4. Kadfe3 l-Arbiya l-qont dyal l-liman */
+.arabic-trans {
+    margin-left: auto;
+}
     </style>
 </head>
 <body>
@@ -222,15 +250,23 @@
             <h2 class="category-title">1. Preparation & Cutting</h2>
             <div class="card-grid">
                 <div class="card">
-                    <div class="word-header">Chop <span class="arabic-trans">يقطع</span></div>
-                    <span class="phonetic">تْشُوبْ</span>
-                    <p class="definition">To cut food into small pieces.</p>
-                    <ul class="examples-list">
-                        <li>I help my mom chop carrots.</li>
-                        <li>Chop the onions for the soup.</li>
-                        <li>Can you chop the wood?</li>
-                    </ul>
-                </div>
+    <div class="word-header">
+        <img src="images/chop.png" class="verb-icon">
+        
+        <div class="word-text">
+            <span class="english-word">Chop</span>
+            <span class="phonetic">تْشُوبْ</span>
+            <span class="arabic-trans">يقطع</span>
+        </div>
+    </div>
+    
+    <p class="definition">To cut food into small pieces.</p>
+    <ul class="examples-list">
+        <li>I help my mom chop carrots.</li>
+        <li>Chop the onions for the soup.</li>
+        <li>Can you chop the wood?</li>
+    </ul>
+</div>
                 <div class="card">
                     <div class="word-header">Slice <span class="arabic-trans">يشرح</span></div>
                     <span class="phonetic">سْلَايْسْ</span>
